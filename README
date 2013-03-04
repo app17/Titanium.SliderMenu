@@ -1,6 +1,8 @@
 Titanium Alloy Slider Menu _or_ zIndex is your friend
 
-A colourful example of a slider menu within a TabGroup. 
+A colourful example of a slider menu within a TabGroup.
+
+Only tested on iOS so far.
 
 All of the styles are within the view (xml) so you can see how it all works. Ideally
 these would go into a tss.
