@@ -1,0 +1,36 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Tab 1" icon="KS_nav_ui.png" layout="composite">
+			<Window id="menuWindow" top="0" left="0" zIndex="1" layout="composite">
+				<TableView width="150" top="0" left="0" onClick="changeView"
+					height="Ti.UI.SIZE" zIndex="1">
+					<TableViewRow title="red" colour="red" />
+					<TableViewRow title="orange" colour="orange" />
+					<TableViewRow title="yellow" colour="yellow" />
+					<TableViewRow title="blue" colour="blue" />
+					<TableViewRow title="green" colour="green" />
+				</TableView>
+				<Window id="mainWindow" width="320"
+					left="0" zIndex="100">
+					<NavigationGroup id="colourfulNav">
+						<Window id="topWindow" title="Colours" layout="composite">
+							<LeftNavButton>
+								<Button id="filterButton" onClick="displayMenu" title="Pick a Colour!" />
+							</LeftNavButton>
+							<View id="redView" backgroundColor="red" top="0" left="0" height="Ti.UI.FILL" width="Ti.UI.FILL" visible="false"/>
+							<View id="orangeView" backgroundColor="orange" top="0" left="0" height="Ti.UI.FILL" width="Ti.UI.FILL" visible="false"/>
+							<View id="yellowView" backgroundColor="yellow" top="0" left="0" height="Ti.UI.FILL" width="Ti.UI.FILL" visible="false"/>
+							<View id="greenView" backgroundColor="green" top="0" left="0" height="Ti.UI.FILL" width="Ti.UI.FILL" visible="false"/>
+							<View id="blueView" backgroundColor="blue" top="0" left="0" height="Ti.UI.FILL" width="Ti.UI.FILL" visible="false"/>
+						</Window>
+					</NavigationGroup>
+				</Window>
+			</Window>
+		</Tab>
+		<Tab title="Tab 2" icon="KS_nav_views.png">
+			<Window title="Tab 2">
+				<Label>I am Window 2</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>
